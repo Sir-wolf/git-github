@@ -1,0 +1,34 @@
+installer git 
+sudo apt-get install git 
+git config --global user.name "sirwolf"
+git config --global user.email "sirwolf"
+git config --global user.email "Sir.wolf.pro@protonmail.com"
+mkdir protonvpn 
+git init
+echo "hello" > hello.txt
+git status
+git add hello.txt
+git status 
+echo "alu!" > hello.txt
+git status
+git commit -m "Inirial commit"
+git status
+git log
+touch test.txt ##Crée un fichier 
+rm -rf .git/ ##supprimé de git 
+git diff hello.txt ##voir la différence
+git branch 
+git checkout -b static-pages 
+git branch 
+git checkout master
+git branch 
+
+ssh-keygen -t rsa -b 4096 -C "Sir.wolf.pro@protonmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+## add sur github la clef
+ssh -T git@github.com
+git remote add origin https://github.com/Sir-wolf/protonvpn.git
+git push -u origin master
